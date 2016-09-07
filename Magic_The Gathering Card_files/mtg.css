@@ -1,0 +1,130 @@
+* {margin: 0; padding: 0; box-sizing: border-box; }
+
+.card {background: #000; padding: 17px; height: 600px; width: 400px;
+	margin: 100px auto;
+}
+.card-background {
+    padding: 7px 8px 30px 7px;
+    background-color: #69a;
+    background-image: 
+        repeating-linear-gradient(140deg, transparent, rgba(255, 255, 255, 0.25) 1%, transparent 20%),
+        repeating-linear-gradient(-30deg, transparent, transparent 8%, rgba(255, 255, 255, 0.4), transparent 9%),
+        repeating-linear-gradient(-10deg, transparent, transparent 13%, rgba(0, 0, 0, 0.4), transparent 15%),
+        repeating-linear-gradient(80deg, transparent, transparent 7.5%, rgba(0, 0, 0, 0.25), transparent 8%),
+        repeating-linear-gradient(5deg, transparent, transparent 10.5%, rgba(255, 255, 255, 0.5), transparent 11%),
+        repeating-linear-gradient(75deg, transparent, transparent 11.5%, rgba(255, 255, 255, 0.5), transparent 12%),
+        repeating-radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1%, transparent 1%, transparent 5%);
+    border-radius: 10px 10px 40px 40px;
+    height: 500px;
+}
+
+.card-body {
+	position: absolute; 
+	height: 109.4%;
+	width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #555;
+    border-radius: 5px 5px 0 0;
+    background: #ddd;
+    
+}
+
+article {
+    padding: 3px;
+    width: 350px;
+}
+
+article > div { 
+    background: #ddd;
+    position: relative;
+    height: 200px;
+    border: 2px solid #333;
+    z-index: -1;
+}
+
+header {
+    padding: 3px; 
+    background: #ddd;
+    border-radius: 8px/20px;
+    box-shadow: -2px 0 0 0 rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 200px; left: 0; right: 0; 
+}
+header div {
+    padding: 5px 8px 3px; 
+    background: radial-gradient(ellipse farthest-corner, #E0E7ED 50%, #BDC6CD);
+    position: relative;
+    border: 2px solid #000; 
+    border-radius: 10px/20px;
+    box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
+    height: 33px; 
+}
+header:first-child {top: 0; }
+header:first-child div {height: 34px; }
+
+#textBox {
+    margin-top: 38px; 
+    padding: 10px 7px;
+    top: 260px; bottom: 44px;
+    border: 2px solid #999;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    background: #d3dddd;
+
+}
+
+#powerToughness {
+    width: 4em;
+    top: ; right: 21px; bottom: 28px; left: auto; 
+    text-align: center; 
+    box-shadow: -2px 1px 2px 0 rgba(0, 0, 0, 0.8);
+}
+#powerToughness div {
+    padding: 4px 0 0; 
+    height: 23px;
+    box-shadow: inset -2px 2px 1px #333, inset 1px -1px 0 #fff;
+    border: 0 none;
+    font-size: 21px;
+}
+
+footer {
+    color: #ccc;
+    font-family: sans-serif; font-size: 9px; 
+    position: relative;
+    left: 25px; bottom: 10px; right: 25px;
+    overflow: auto; 
+}
+footer p {margin-bottom: 0.2em; letter-spacing: 0.18em; }
+
+.ms {
+	position: relative;
+	top: -22px;
+	float: right;
+}
+
+h1 {font-size: 21px; line-height: 1em; }
+h2 {font-size: 18px; line-height: 1em; }
+h3 {
+    padding-top: 2px;
+    position: relative;
+    right: 5px; top: 2px;
+    width: 1.05em; height: 1.05em;
+    background: #ddd;
+    text-align: center;
+    border-radius: 1em;
+    line-height: 1em;
+}
+h4 {
+    border-bottom: 14px solid #000;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    height: 0; width: 0;
+    overflow: hidden;
+    position: relative;
+    right: 10px; top: 7px;
+}
+h6 {float: right; width: 60%; text-align: right; font-size: 8px; }
+p {margin-bottom: 0.6em; line-height: 1.1em; }
+blockquote {font-style: italic; }
+blockquote p {margin-bottom: 0; }
