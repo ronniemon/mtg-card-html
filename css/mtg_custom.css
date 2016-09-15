@@ -1,5 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box; }
 
+/* card sizing and background */
 .card {
 	background: #000; 
 	padding: 17px; 
@@ -129,6 +130,8 @@ header.card-name div {
 	float: right;
 }
 
+/* text styles begin */
+
 h1 {
 	font-size: 21px; 
 	line-height: 1em; 
@@ -195,7 +198,51 @@ footer p {
 	display: inline-block;
 	}
 	
+/* flip animation styles and hover */	
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container {
+	height: 550px; 
+	width: 400px;
+	margin: 0 50px;
+	float: left;
+}	
 	
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	
+	position: relative;
+	
+	
+}
+
+/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+	
+	/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
 
 
 
